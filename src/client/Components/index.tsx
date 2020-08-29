@@ -5,3 +5,4 @@ export { default as Ikezaki } from './Ikezaki';
 export { default as Tsunku } from './Tsunku';
 export { default as Pekopa } from './Pekopa';
 export { default as Soshina } from './Soshina';
+export { default as Zako } from './Zako';

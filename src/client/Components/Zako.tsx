@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import soshinaList from '../Data/soshina.json';
+import zakoList from '../Data/zako.json';
 import styled from 'styled-components'
 import { Link } from "react-router-dom";
 
-import soshinaImg from '../Images/soshina.jpg'
+import zakoImg from '../Images/zako.jpg'
 
 const Button = styled.p`
 	display: inline-block;
@@ -18,11 +18,7 @@ const Button = styled.p`
 `
 const Main = styled.div`
 	width: 100%;
-	height: 80vh;
-	overflow: hidden;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	margin-top: 30px;
 `
 const HomeButton = styled.button`
 	position: fixed;
@@ -39,10 +35,11 @@ const HomeButton = styled.button`
 `
 
 const MainText = styled.p`
-	max-width: 80%;
-	max-height: 60vh;
+	width: 80%;
+	max-height: 65vh;
 	overflow-y: auto;
-	font-size: 1.8rem;
+	margin: 0 auto;
+	font-size: 1.5rem;
 	font-weight: bold;
 	font-family: 'Sawarabi Mincho', sans-serif;
 	padding 20px;
@@ -67,27 +64,27 @@ const Container = styled.div`
 	transform: translateX(-50%);
 `
 
-const Soshina = () => {
-	const [soshina, setSoshina] = useState(soshinaList.soshina[Math.floor(Math.random() * Math.floor(soshinaList.soshina.length))]);
+const Zako = () => {
+	const [zako, setZako] = useState(zakoList.zako[Math.floor(Math.random() * Math.floor(zakoList.zako.length))]);
 
 	let random: any;
-	const soshinaSlot = () => {
-		random = Math.floor(Math.random() * Math.floor(soshinaList.soshina.length));
-		setSoshina(soshinaList.soshina[random]);
+	const zakoSlot = () => {
+		random = Math.floor(Math.random() * Math.floor(zakoList.zako.length));
+		setZako(zakoList.zako[random]);
 	}
 
 	return (
 		<React.Fragment>
-			<Img src={soshinaImg} />
+			<Img src={zakoImg} />
 			<HomeButton type='button'>
 				<Link to="/">HOME</Link>
 			</HomeButton>
 			<Main>
-				<MainText>{soshina}</MainText>
+				<MainText>{zako}</MainText>
 			</Main>
 			<Container>
 				<Button
-					onClick={() => soshinaSlot()}>
+					onClick={() => zakoSlot()}>
 					おかわり!
 				</Button>
 			</Container>
@@ -95,4 +92,4 @@ const Soshina = () => {
 	);
 };
 
-export default Soshina;
+export default Zako;

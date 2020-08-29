@@ -10,6 +10,7 @@ import {
 	Tsunku,
 	Pekopa,
 	Soshina,
+	Zako,
 } from './Components/index';
 
 const app = () => {
@@ -21,6 +22,7 @@ const app = () => {
 			<Route exact path="/tsunku" component={Tsunku}></Route>
 			<Route exact path="/pekopa" component={Pekopa}></Route>
 			<Route exact path="/soshina" component={Soshina}></Route>
+			<Route exact path="/zako" component={Zako}></Route>
 		</Router>
 	);
 };

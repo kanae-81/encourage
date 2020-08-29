@@ -26,6 +26,9 @@ const Home = () => {
       <p>
         <Link to="/soshina">粗品</Link>
       </p>
+      <p>
+        <Link to="/zako">ハリウッドザコシショウ</Link>
+      </p>
     </React.Fragment>
   );
 };
