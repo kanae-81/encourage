@@ -17,6 +17,9 @@ const Home = () => {
       <p>
         <Link to="/ikezaki">サンシャイン池崎</Link>
       </p>
+      <p>
+        <Link to="/tsunku">つんく♂さん</Link>
+      </p>
     </React.Fragment>
   );
 };
