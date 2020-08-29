@@ -8,6 +8,7 @@ import {
 	Shuzo,
 	Ikezaki,
 	Tsunku,
+	Pekopa,
 } from './Components/index';
 
 const app = () => {
@@ -17,6 +18,7 @@ const app = () => {
 			<Route exact path="/shuzo" component={Shuzo}></Route>
 			<Route exact path="/ikezaki" component={Ikezaki}></Route>
 			<Route exact path="/tsunku" component={Tsunku}></Route>
+			<Route exact path="/pekopa" component={Pekopa}></Route>
 		</Router>
 	);
 };

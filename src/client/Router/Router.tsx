@@ -4,6 +4,7 @@ import {
 	Home,
 	Shuzo,
 	Ikezaki,
+	Pekopa,
 } from '../Components/index';
 import Tsunku from '../Components/Tsunku';
 
@@ -14,6 +15,7 @@ const Router = () => {
 			<Route exact path="(/shuzo)" component={Shuzo} />
 			<Route exact path="(/ikezaki)" component={Ikezaki} />
 			<Route exact path="(/tsunku)" component={Tsunku} />
+			<Route exact path="(/pekopa)" component={Pekopa} />
 		</>
 	);
 };

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import ikezakiList from '../Data/ikezaki.json';
+import pekopaList from '../Data/pekopa.json';
 import styled from 'styled-components'
 import { Link } from "react-router-dom";
 
-import ikezakiImg from '../Images/ikezaki.jpg'
+import pekopaImg from '../Images/pekopa.jpg'
 
 const Button = styled.p`
 	display: inline-block;
@@ -64,27 +64,27 @@ const Container = styled.div`
 	transform: translateX(-50%);
 `
 
-const Ikezaki = () => {
-	const [ikezaki, setIkezaki] = useState(ikezakiList.ikezaki[Math.floor(Math.random() * Math.floor(ikezakiList.ikezaki.length))]);
+const Pekopa = () => {
+	const [pekopa, setPekopa] = useState(pekopaList.pekopa[Math.floor(Math.random() * Math.floor(pekopaList.pekopa.length))]);
 
 	let random: any;
-	const ikezakiSlot = () => {
-		random = Math.floor(Math.random() * Math.floor(ikezakiList.ikezaki.length));
-		setIkezaki(ikezakiList.ikezaki[random]);
+	const pekopaSlot = () => {
+		random = Math.floor(Math.random() * Math.floor(pekopaList.pekopa.length));
+		setPekopa(pekopaList.pekopa[random]);
 	}
 
 	return (
 		<React.Fragment>
-			<Img src={ikezakiImg} />
+			<Img src={pekopaImg} />
 			<HomeButton type='button'>
 				<Link to="/">HOME</Link>
 			</HomeButton>
 			<Main>
-				<MainText>{ikezaki}</MainText>
+				<MainText>{pekopa}</MainText>
 			</Main>
 			<Container>
 				<Button
-					onClick={() => ikezakiSlot()}>
+					onClick={() => pekopaSlot()}>
 					おかわり!
 				</Button>
 			</Container>
@@ -92,4 +92,4 @@ const Ikezaki = () => {
 	);
 };
 
-export default Ikezaki;
+export default Pekopa;

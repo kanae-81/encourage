@@ -20,6 +20,9 @@ const Home = () => {
       <p>
         <Link to="/tsunku">つんく♂さん</Link>
       </p>
+      <p>
+        <Link to="/pekopa">ぺこぱの人</Link>
+      </p>
     </React.Fragment>
   );
 };

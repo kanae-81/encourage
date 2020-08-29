@@ -15,12 +15,6 @@ const Button = styled.p`
 	padding: 10px 20px;
 	margin: 0;
 	cursor: pointer;
-	transition: all  0.5s ease;
-	&:hover {
-		opacity: 0.8;
-		background: #fff;
-		color: palevioletred;
-	}
 `
 const Main = styled.div`
 	width: 100%;
