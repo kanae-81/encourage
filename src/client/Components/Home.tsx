@@ -23,6 +23,9 @@ const Home = () => {
       <p>
         <Link to="/pekopa">ぺこぱの人</Link>
       </p>
+      <p>
+        <Link to="/soshina">粗品</Link>
+      </p>
     </React.Fragment>
   );
 };
