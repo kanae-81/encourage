@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import shuzoList from '../Data/shuzo.json';
 import styled from 'styled-components'
+import { Link } from "react-router-dom";
 
 import shuzoImg from '../Images/shuzo.jpg'
 
 const Title = styled.h2`
 	font-size: 1.3rem;
 	color: #fff;
+	display: inline-block;
 `
 const Button = styled.p`
 	display: inline-block;
@@ -29,6 +31,20 @@ const Main = styled.div`
 	width: 100%;
 	margin-top: 30px;
 `
+const HomeButton = styled.button`
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 5px;
+	background-color: #fff;
+  color: #fff;
+	padding: 2px 5px;
+	margin-left: 10px 15px;
+	cursor: pointer;
+`
+
 const MainText = styled.p`
 	width: 80%;
 	max-height: 65vh;
@@ -72,6 +88,9 @@ const Shuzo = () => {
 		<React.Fragment>
 			<Img src={shuzoImg} />
 			<Title>修造はいつでもあなたの味方！</Title>
+			<HomeButton type='button'>
+				<Link to="/">HOME</Link>
+			</HomeButton>
 			<Main>
 				<MainText>{shuzo}</MainText>
 			</Main>
