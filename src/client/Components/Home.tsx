@@ -11,7 +11,12 @@ const Home = () => {
   return (
     <React.Fragment>
       <Title>誰に励ましてもらう？</Title>
-      <Link to="/shuzo">松岡修造</Link>
+      <p>
+        <Link to="/shuzo">松岡修造</Link>
+      </p>
+      <p>
+        <Link to="/ikezaki">サンシャイン池崎</Link>
+      </p>
     </React.Fragment>
   );
 };
